@@ -67,4 +67,4 @@ bot.on('message', message => {
  // member.guild.channels.get("welcome").send(`"${member.user.username}" has joined this server`);
 //}
 });
-bot.login(settings.token).catch(err=> console.log("Incorrect Token was provided"))
+bot.login(process.env.BOT_TOKEN).catch(err=> console.log("Incorrect Token was provided"))
